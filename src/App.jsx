@@ -8,13 +8,15 @@ import {
 
 import Signuppage from './Pages/Signuppage';
 import Homepage from './Pages/Homepage';
+import Login from './Pages/login';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Signuppage />} />
-        <Route path="/homepage" element={<Homepage />} />
+        <Route path="/signuppage" element={<Signuppage />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/login" element={<Login />} />
       </Routes> 
       </Router>
   )
